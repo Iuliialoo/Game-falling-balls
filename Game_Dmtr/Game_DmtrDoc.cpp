@@ -46,8 +46,8 @@ CMyCircle::CMyCircle() {
 void CMyCircle::create(CRect* rect, int speed) {
 	startMove = false;
 	r = 20 + rand() % 20;
-	x = (r + 5) + rand() % (rect->Width() - 2 * r - 10);
-	y = (r + 5) + rand() % (rect->Height() / 3 * 2);
+	x = (r + 5) + rand() % 900;
+	y = (r + 5) + rand() % 400;
 
 	dy = speed;
 }
